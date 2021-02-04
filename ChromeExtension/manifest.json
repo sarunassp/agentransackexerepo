@@ -1,0 +1,16 @@
+{
+    "name": "Stop hijacking copy",
+    "version": "0.1",
+    "description": "Stops propagation of copy event for delfi, 15min",
+    "manifest_version": 2,
+    "content_scripts": [{
+            "matches": [
+                "*://*.delfi.lt/*",
+                "*://*.15min.lt/*",
+                "*://*.vz.lt/*",
+				"*://syst-ui-shared-logon.danskebank.com/*"
+            ],
+            "js": ["script.js"]
+        }
+    ]
+}
